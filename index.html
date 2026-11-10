@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>warKOPInang | Teman Ngopi Setiap Hari</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>war<span>KOPI</span>nang</h1>
+        <p>Tempat Ngopi, Tempat Berbagi Cerita.</p>
+    </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#jadwal">Jam Buka</a>
+        <a href="#pesan">Pesan</a>
+    </nav>
+    <main class="container">
+        <!-- TENTANG KEDAI -->
+        <section id="home" class="tentang">
+            <div>
+                <p class="subtitle">SELAMAT DATANG DI</p>
+                <h2>warKOPInang</h2>
+                <p>
+                    warKOPInang merupakan kedai kopi yang hadir
+                    untuk menemani setiap aktivitas dan cerita Anda.
+                    Kami menyediakan berbagai pilihan kopi dan
+                    minuman dengan bahan berkualitas serta cita rasa
+                    yang nikmat.
+                </p>
+                <p>
+                    Mulai dari kopi susu, cappuccino, hingga
+                    chocolate, semuanya dapat dinikmati dengan
+                    suasana nyaman dan pelayanan yang ramah.
+                </p>
+                <a href="#menu" class="btn">Lihat Menu Kami</a>
+            </div>
+        </section>
+        <!-- MENU -->
+        <section id="menu">
+            <div class="section-title">
+                <p class="subtitle">PILIHAN FAVORIT</p>
+                <h2>Menu Favorit Kami</h2>
+                <p>Nikmati berbagai minuman pilihan dari warKOPInang.</p>
+            </div>
+            <div class="daftar-menu">
+                <!-- MENU 1 -->
+                <div class="card">
+                    <img
+                        src="images/Kopi-Susu.jpg" alt="Kopi Susu">
+                    <div class="card-content">
+                        <h3>Kopi Susu</h3>
+                        <p>
+                            Perpaduan espresso, susu segar,
+                            dan gula aren yang memberikan
+                            rasa manis dan nikmat.
+                        </p>
+                        <p class="harga">Rp18.000</p>
+                        <a href="#pesan" class="btn-card">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- MENU 2 -->
+                <div class="card">
+                    <img
+                        src="images/Cappucino.jpg" alt="Cappuccino">
+                    <div class="card-content">
+                        <h3>Cappuccino</h3>
+                        <p>
+                            Espresso dengan perpaduan susu
+                            dan foam lembut yang menghasilkan
+                            rasa khas.
+                        </p>
+                        <p class="harga">Rp22.000</p>
+                        <a href="#pesan" class="btn-card">Pesan</a>
+                    </div>
+                </div>
+
+                <!-- MENU 3 -->
+                <div class="card">
+                    <img
+                        src="images/Chocolate.jpg" alt="Chocolate">
+                    <div class="card-content">
+                        <h3>Chocolate</h3>
+                        <p>
+                            Minuman cokelat dengan rasa
+                            manis, creamy, dan cocok untuk
+                            menemani waktu santai.
+                        </p>
+                        <p class="harga">Rp20.000</p>
+                        <a href="#pesan" class="btn-card">Pesan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JAM OPERASIONAL -->
+        <section id="jadwal">
+            <div class="section-title">
+                <p class="subtitle">WAKTU KUNJUNGAN</p>
+                <h2>Jam Operasional</h2>
+                <p>Kami siap menemani waktu ngopi Anda.</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam Buka</th>
+                    <th>Jam Tutup</th>
+                </tr>
+                <tr>
+                    <td>Senin - Jumat</td>
+                    <td>08.00</td>
+                    <td>22.00</td>
+                </tr>
+                <tr>
+                    <td>Sabtu</td>
+                    <td>09.00</td>
+                    <td>23.00</td>
+                </tr>
+                <tr>
+                    <td>Minggu</td>
+                    <td>10.00</td>
+                    <td>22.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- FORM PEMESANAN -->
+        <section id="pesan">
+            <div class="section-title">
+                <p class="subtitle">PESAN SEKARANG</p>
+                <h2>Form Pemesanan</h2>
+                <p>Silakan isi data berikut untuk melakukan pemesanan.</p>
+            </div>
+            <form>
+                <label for="nama">Nama Pelanggan</label>
+                <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukkan email Anda" required>
+
+                <label for="produk">Pilih Minuman</label>
+                <select id="produk" required>
+                    <option value="">-- Pilih Menu --</option>
+                    <option value="Kopi Susu">Kopi Susu</option>
+                    <option value="Cappuccino">Cappuccino</option>
+                    <option value="Chocolate">Chocolate</option>
+                </select>
+
+                <label for="jumlah">Jumlah Pesanan</label>
+                <input type="number" id="jumlah" min="1" value="1" required>
+                <button type="submit">
+                    Kirim Pesanan
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h2>war<span>KOPI</span>nang</h2>
+        <p>Tempat Ngopi, Tempat Berbagi Cerita.</p>
+        <p class="copyright">
+            &copy; 2026 warKOPInang. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+</html>
